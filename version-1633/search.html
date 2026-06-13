@@ -1,0 +1,106 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>搜索筛选 - 国产热门电影</title>
+<meta name="description" content="国产热门电影搜索筛选页，可按片名、年份、地区、类型查找电影。">
+<meta name="keywords" content="国产电影,热门电影,免费电影,在线观看,无广告,高清电影,国产大片,最新电影,经典电影,免费观影">
+<meta name="robots" content="index,follow">
+<meta name="format-detection" content="telephone=no">
+<meta property="og:type" content="website">
+<meta property="og:title" content="搜索筛选 - 国产热门电影">
+<meta property="og:description" content="国产热门电影搜索筛选页，可按片名、年份、地区、类型查找电影。">
+<link rel="stylesheet" href="assets/css/original-beautified.css">
+<link rel="stylesheet" href="assets/css/site.css">
+
+</head>
+<body>
+<header class="site-header">
+  <nav class="nav-shell" aria-label="主导航">
+    <a class="brand" href="index.html" aria-label="国产热门电影首页">
+      <span class="brand-icon">▶</span>
+      <span class="brand-text">国产热门电影</span>
+    </a>
+    <button class="nav-toggle" type="button" aria-label="展开导航" data-nav-toggle>
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+    <div class="nav-links" data-nav-menu>
+      <a class="nav-link" href="index.html">首页</a>
+      <a class="nav-link" href="categories.html">分类</a>
+      <a class="nav-link" href="ranking.html">排行榜</a>
+      <a class="nav-link" href="all.html">全部影片</a>
+      <a class="nav-link is-active" href="search.html">搜索筛选</a>
+    </div>
+    <form class="header-search" action="search.html" method="get" role="search">
+      <input type="search" name="q" placeholder="搜索片名、类型、地区" aria-label="搜索影片">
+      <button type="submit">搜索</button>
+    </form>
+  </nav>
+</header>
+<main>
+<section class="page-hero page-hero--compact">
+  <div class="container">
+    <span class="eyebrow">Search & Filter</span>
+    <h1>搜索与筛选</h1>
+    <p>通过关键词、分类、年份和地区组合查找影片。</p>
+  </div>
+</section>
+<section class="section section-white">
+  <div class="container">
+    <div class="search-controls" data-search-app>
+      <label>
+        <span>关键词</span>
+        <input type="search" data-search-input placeholder="片名、标签、简介、类型">
+      </label>
+      <label>
+        <span>分类</span>
+        <select data-category-select>
+          <option value="">全部分类</option>
+          <option value="guochan">国产电影</option><option value="huayu">华语电影</option><option value="oumei">欧美电影</option><option value="rihan">日韩电影</option><option value="yazhou">亚洲电影</option><option value="juqing">剧情电影</option><option value="dongzuo">动作电影</option><option value="aiqing">爱情电影</option><option value="xiju">喜剧电影</option><option value="xuanyi">悬疑电影</option><option value="kongbu">恐怖电影</option><option value="kehuan">科幻电影</option><option value="jiating">家庭电影</option>
+        </select>
+      </label>
+      <label>
+        <span>年份</span>
+        <input type="search" data-year-input placeholder="例如 2024">
+      </label>
+      <label>
+        <span>地区</span>
+        <input type="search" data-region-input placeholder="例如 中国大陆">
+      </label>
+      <button type="button" data-reset-search>重置筛选</button>
+    </div>
+    <div class="search-summary" data-search-summary>正在载入影片数据...</div>
+    <div class="movie-grid movie-grid--4" data-search-results></div>
+  </div>
+</section>
+</main>
+<footer class="site-footer">
+  <div class="footer-shell">
+    <div>
+      <a class="footer-brand" href="index.html">国产热门电影</a>
+      <p>国产热门电影网站提供最新最全的国产电影在线免费观看。高清画质，无广告干扰，尽享纯净观影体验。汇聚经典国产大片和最新上映电影。</p>
+    </div>
+    <div class="footer-links">
+      <a href="categories.html">分类总览</a>
+      <a href="ranking.html">热门排行</a>
+      <a href="all.html">全部影片</a>
+      <a href="sitemap.xml">网站地图</a>
+    </div>
+  </div>
+</footer>
+<script src="assets/js/main.js" defer></script>
+<script src="assets/js/search.js" defer></script>
+<script>
+var _hmt = _hmt || [];
+(function() {
+  var hm = document.createElement("script");
+  hm.src = "https://hm.baidu.com/hm.js?95df08bc498ee0333203841fd6fee1eb";
+  var s = document.getElementsByTagName("script")[0]; 
+  s.parentNode.insertBefore(hm, s);
+})();
+</script>
+</body>
+</html>
